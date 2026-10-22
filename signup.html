@@ -11,7 +11,7 @@
   <div class="page">
     <aside class="brand">
       <header class="logo">
-        <img src="images/must-logo.jpeg" alt="Mbarara University logo" class="logo-img">
+        <img src="images/must_logo.png" alt="Mbarara University logo" class="logo-img">
       </header>
       <section>
         <h2>Create your portal account.</h2>
@@ -43,4 +43,20 @@
                  pattern="(?=.*\d)(?=.*[A-Za-z]).{8,}"
                  title="At least 8 characters, with letters and a number"
                  autocomplete="new-password" required>
-          <small class="hint">At least 8 characters, with letters and a
+          <small class="hint">At least 8 characters, with letters and a number.</small>
+
+          <label for="confirm">Confirm password</label>
+          <input id="confirm" name="confirm" type="password" minlength="8"
+                 autocomplete="new-password" required>
+
+          <label class="check"><input type="checkbox" name="terms" required> I agree to the university terms of use</label>
+
+          <button type="submit">Create account</button>
+        </form>
+
+        <p class="switch">Already have an account? <a href="index.html">Sign in</a></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
