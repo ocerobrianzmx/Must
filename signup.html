@@ -10,12 +10,14 @@
 <body>
   <div class="page">
     <aside class="brand">
-      <header class="logo"><span class="mark"></span>MUST Portal</header>
+      <header class="logo">
+        <img src="images/must-logo.jpeg" alt="Mbarara University logo" class="logo-img">
+      </header>
       <section>
         <h2>Create your portal account.</h2>
-        <p>Register with your university email and registration or staff number to get started.</p>
+        <p>Register with your university email and registration number to get started.</p>
       </section>
-      <footer><small>© 2026 Mbarara University of Science and Technology.</small></footer>
+      <footer><small>&copy; 2026 Mbarara University of Science and Technology.</small></footer>
     </aside>
 
     <main class="panel">
@@ -25,51 +27,20 @@
 
         <form action="#" method="post">
           <label for="fullname">Full name</label>
-          <input id="fullname" name="fullname" type="text" required>
-
-          <fieldset>
-            <legend>I am a</legend>
-            <label class="check"><input type="radio" name="role" value="student" required> Student</label>
-            <label class="check"><input type="radio" name="role" value="staff"> Staff</label>
-          </fieldset>
+          <input id="fullname" name="fullname" type="text" autocomplete="name" required>
 
           <label for="email">University email</label>
-          <input id="email" name="email" type="email" placeholder="name@must.ac.ug" required>
+          <input id="email" name="email" type="email" placeholder="name@must.ac.ug" autocomplete="email" required>
 
-          <label for="regno">Registration / staff number</label>
-          <input id="regno" name="regno" type="text" required>
-
-          <label for="faculty">Faculty / department</label>
-          <select id="faculty" name="faculty" required>
-            <option value="">Select faculty</option>
-            <option>Computing and Informatics</option>
-            <option>Medicine</option>
-            <option>Science</option>
-            <option>Applied Sciences and Technology</option>
-            <option>Business and Management Sciences</option>
-            <option>Interdisciplinary Studies</option>
-          </select>
+          <label for="regno">Registration number</label>
+          <input id="regno" name="regno" type="text" autocomplete="off" required>
 
           <label for="phone">Phone number</label>
-          <input id="phone" name="phone" type="tel" placeholder="+256 7XX XXX XXX">
+          <input id="phone" name="phone" type="tel" placeholder="+256 7XX XXX XXX" autocomplete="tel">
 
           <label for="password">Password</label>
           <input id="password" name="password" type="password" minlength="8"
                  pattern="(?=.*\d)(?=.*[A-Za-z]).{8,}"
-                 title="At least 8 characters, with letters and a number" required>
-          <small class="hint">At least 8 characters, with letters and a number.</small>
-
-          <label for="confirm">Confirm password</label>
-          <input id="confirm" name="confirm" type="password" minlength="8" required>
-
-          <label class="check"><input type="checkbox" name="terms" required> I agree to the university's acceptable use policy</label>
-
-          <button type="submit">Create account</button>
-        </form>
-
-        <p class="switch">Already have an account? <a href="index.html">Sign in</a></p>
-      </section>
-    </main>
-  </div>
-</body>
-</html>
+                 title="At least 8 characters, with letters and a number"
+                 autocomplete="new-password" required>
+          <small class="hint">At least 8 characters, with letters and a
